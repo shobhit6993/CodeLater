@@ -1,7 +1,6 @@
 var DEBUG=true;
 $(document).ready( function() 
 {
-	console.log($('.lst').find('img'));
 	chrome.storage.sync.get( null, function (items)
 	{
 		$(".lst").html("");
@@ -15,7 +14,6 @@ $(document).ready( function()
 			title = items[k]['title'];
 			href= items[k]['href'];
 			var tableentry = $(".lst > table");
-			console.log(tableentry);
 			tableentry.append("<tr><td><a target='_blank' href='" + href + "' >" + id+ "</a></td><td><a target='_blank' href='" + href + "' >" + title+ "</a></td><td><a href='#'><img src='delete.png' alt='DELETE' id='picture' /></a></td></tr>");
 			i++;
 		}

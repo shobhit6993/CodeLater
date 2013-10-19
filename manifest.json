@@ -4,7 +4,7 @@
       "default_popup": "popup.html"
    },
    "content_scripts": [ {
-      "js": [ "jq.js", "handler.js" ],
+      "js": [ "jq.js", "handler.js"],
       "map": "jquery-1.10.2.min.map",
       "matches": [ "http://www.codechef.com/*", "https://www.codechef.com/*", "http://codechef.com/*", "https://codechef.com/*" ]
    } ],
