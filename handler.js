@@ -20,8 +20,6 @@ var DEBUG=true;
 			{
 				if(items[k]['href'].replace('#','')===url.replace('#',''))
 				{ 
-					console.log("shobhit"); 
-					console.log("mainak");
 					var info=$(".button-list").find("li").find("a.codeLater");
 					info.css("text-decoration","line-through");
 					info.removeClass("toDoAllowed");
@@ -44,7 +42,6 @@ var DEBUG=true;
 				info.css("text-decoration","line-through");
 				info.removeClass("toDoAllowed");
 				chrome.storage.sync.set(obj);
-				console.log(obj);
 			};
 			
 		});

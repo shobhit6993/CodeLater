@@ -1,7 +1,12 @@
 body {
 	font-family: "Helvetica Neue",Arial,sans-serif;
 }
-
+td:nth-child(1) {
+	width:60;
+}
+td:nth-child(2) {
+	width:200;
+}
 .container {
 	width: 300px;
 }
