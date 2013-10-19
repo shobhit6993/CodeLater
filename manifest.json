@@ -1,0 +1,17 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jq.js", "handler.js", "dummy.js" ],
+      "matches": [ "http://www.codechef.com/*", "https://www.codechef.com/*", "http://codechef.com/*", "https://codechef.com/*" ]
+   } ],
+   // "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWf274RJ3H1d5ycfZmFKZc4/LXUJQUK6CY1RGBFMuIg19sJVjzhEtLrHnkVMaM/YQqUzHLS4ABgUd2Oah70RBe7UaVK9GSu09f5D3weGVoi9XEq9crOstLLh2WoDCMH9kiaOjADr9WVrpH56Hhq3r4fuDYM0W5BciMsAAfT/igrwIDAQAB",
+   "manifest_version": 2,
+   "name": "CodeLater",
+   "description": "Mark problems as 'CodeLater' on Codechef.",
+   "permissions": [ "storage" ],
+   // "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "13.10"
+}
