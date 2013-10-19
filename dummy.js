@@ -1,3 +1,4 @@
+var DEBUG=false;
 (function(){
 	chrome.storage.sync.clear();
 	obj={};
@@ -7,15 +8,16 @@
 	items['title']="Treasure Hunting";
 	items['href']="http://www.codechef.com/problems/N1";
 	obj[items['href']]=items;
-	console.log(items);
+
+	if(DEBUG) console.log(items);
 	item['id']="SUPERPLN";
 	item['title']="SUper Plane";
 	item['href']="http://www.codechef.com/problems/SUPERPLN";
 	obj[item['href']]=item;
-	console.log(item);
+	
+	if(DEBUG) console.log(item);
 
 	chrome.storage.sync.set(obj);
-	chrome.storage.sync.get( null, function (it){
-		console.log(it);});
+	chrome.storage.sync.get( null, function (it){});
 
 })();
