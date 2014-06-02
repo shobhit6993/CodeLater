@@ -20,7 +20,9 @@ $(document).ready( function()
 		if(i==0)
 		{
 			$(".lst").html("");
-			$(".lst").append("Keep Calm and CODE more!")
+			$(".lst").append("Nothing to show :( <br>\
+				Open a problem page and click on CodeLater to add it \
+				to the list.")
 		}
 		$('.lst').on('click', 'img' ,function(event)
 		{
